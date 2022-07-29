@@ -6,7 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -17,46 +16,56 @@
 
     <link
       rel="stylesheet"
-      href="/src/Style.css"
+      href="/src/style.css"
     />
     <title>
       Frontend Mentor | Interactive
       rating component
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <!-- Rating state start -->
+    <main>
+      <!-- Rating state start -->
+      <div
+        class="container rating-states"
+      >
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did
+          with your support request. All
+          feedback is appreciated to
+          help us improve our offering!
+        </p>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+        <button>Submit</button>
+      </div>
+      <!-- Rating state end -->
 
-    How did we do? Please let us know
-    how we did with your support
-    request. All feedback is appreciated
-    to help us improve our offering! 1 2
-    3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate
-    you taking the time to give a
-    rating. If you ever need more
-    support, don’t hesitate to get in
-    touch!
-
-    <!-- Thank you state end -->
+      <!-- Thank you state start -->
+      <div
+        class="container thank-you-state"
+      >
+        <div class="state-result">
+          <p>You selected</p>
+          <!-- Add rating here -->
+          <p>out of 5</p>
+        </div>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the
+          time to give a rating. If you
+          ever need more support, don’t
+          hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
 
     <footer>
       <div class="attribution">
@@ -69,8 +78,9 @@
         <a href="#">Your Name Here</a>.
       </div>
     </footer>
-    <script>
-      src = '/src/index.js';
-    </script>
+    <script
+      type="text/javascript"
+      src="/src/index.js"
+    ></script>
   </body>
 </html>

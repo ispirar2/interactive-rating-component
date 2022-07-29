@@ -1,0 +1,25 @@
+* ::before ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+}
+
+/* general styles */
+body {
+    height: 100vh;
+    width: 100vw;
+    font size: 1rem;
+    font-family: 'Montserrat';
+    background-color: hsl(30, 38%, 92%);
+}
+
+main{
+    height: 85vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

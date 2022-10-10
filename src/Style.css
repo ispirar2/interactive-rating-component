@@ -36,10 +36,12 @@ main {
 }
 
 /* Styling the rating main container */
-main .container {
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 350px;
   height: 350px;
   background-color: var(--dark-blue);
@@ -56,14 +58,14 @@ main .container {
   padding: 15px;
   border-radius: var(--border-radius2);
   background: var(--medium-blue);
-  transform: translate(-130px, 25px);
+  transform: translate(-130px, -15px);
 }
 
 h1 {
   font-size: 27px;
   font-weight: 600;
   color: white;
-  transform: translate(-55px, 25px);
+  transform: translate(-55px, -15px);
 }
 
 p {
@@ -71,7 +73,7 @@ p {
   font-weight: 400;
   width: 34ch;
   color: var(--light-grey);
-  transform: translate(-7px, 10px);
+  transform: translate(-7px, -15px);
 }
 
 /* styling the rating buttons */
@@ -84,7 +86,7 @@ main .container ul {
   list-style: none;
 }
 
-ul .rating-style {
+.rating-style {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +98,6 @@ ul .rating-style {
   border-radius: var(--border-radius2);
   cursor: pointer;
   border: none;
-  transform: translate(0, 30px);
 }
 
 /* the button style and the footer */
@@ -119,7 +120,7 @@ button {
 }
 
 .submit {
-  transform: translate(0, 50px);
+  transform: translate(0, 20px);
 }
 
 footer {
@@ -162,44 +163,46 @@ footer a {
 /* end of rating container */
 
 /*  thank you container */
-main .thank-you-state {
+.hidden {
   display: none;
 }
 .thank-you-state h1 {
   font-size: 27px;
   font-weight: 500;
-  transform: translate(0, 30px);
+  transform: translate(0, 45px);
 }
 .thank-you-state .massage {
   font-size: 13px;
   font-weight: 400;
   text-align: center;
   width: 35ch;
-  transform: translate(0, 5px);
+  transform: translate(0, 20px);
 }
 .thank-you-state .state-result {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 17ch;
   height: 25px;
   margin: 0;
   padding: 0;
   background-color: var(--medium-blue);
   border-radius: var(--border-radius3);
-  transform: translate(0, 20px);
+  transform: translate(0, 45px);
 }
 .thank-you-state .state-result p {
-  width: 10ch;
+  width: 16ch;
   color: var(--orange);
   opacity: 0.7;
   font-size: 13px;
   font-weight: 400;
   margin: 0;
   padding: 0;
-  transform: translate(15px, 0);
+  transform: translate(2px, 0);
 }
-img {
+.thank-you-state img .img {
   width: 150px;
   margin: 0;
   padding: 0;
+  transform: translate(0, 2550px);
 }

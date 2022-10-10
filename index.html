@@ -47,21 +47,37 @@
           help us improve our offering!
         </p>
         <ul>
-          <button class="rating-style">
-            <li>1</li>
-          </button>
-          <button class="rating-style">
-            <li>2</li>
-          </button>
-          <button class="rating-style">
-            <li>3</li>
-          </button>
-          <button class="rating-style">
-            <li>4</li>
-          </button>
-          <button class="rating-style">
-            <li>5</li>
-          </button>
+          <li>
+            <button
+              class="rating-style btn">
+              1
+            </button>
+          </li>
+          <li>
+            <button
+              class="rating-style btn">
+              2
+            </button>
+          </li>
+          <li>
+            <button
+              class="rating-style btn">
+              3
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="rating-style btn">
+              4
+            </button>
+          </li>
+          <li>
+            <button
+              class="rating-style btn">
+              5
+            </button>
+          </li>
         </ul>
         <button class="submit">
           Submit
@@ -72,15 +88,17 @@
       <!-- Thank you state start -->
 
       <div
-        class="container thank-you-state">
+        class="container thank-you-state hidden">
         <img
+          class="img"
           src="/images/illustration-thank-you.svg"
           alt="" />
         <div class="state-result">
           <p class="selected-rating">
             You selected
+            <span id="rating"></span>
+            out of 5
           </p>
-          <p>out of 5</p>
         </div>
         <h1>Thank you!</h1>
         <p class="massage">

@@ -1,25 +1,205 @@
 * ::before ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    
+
+:root {
+  --light-grey: #9ba2ac;
+  --medium-grey: #808893;
+  --medium-blue: #262f38;
+  --dark-blue: #1f2630;
+  --very-dark-blue: #141519;
+  --orange: #f47521;
+  --border-radius1: 7%;
+  --border-radius2: 100%;
+  --border-radius3: 30px;
 }
 
 /* general styles */
 body {
-    height: 100vh;
-    width: 100vw;
-    font size: 1rem;
-    font-family: 'Montserrat';
-    background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  width: 100vw;
+  font-size: 1rem;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(
+    --very-dark-blue
+  );
 }
 
-main{
-    height: 85vh;
-    width: 98vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  height: 85vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the rating main container */
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  background-color: var(--dark-blue);
+  border-radius: var(--border-radius1);
+}
+
+/* Styling the heading and the text */
+.logo-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  width: 10px;
+  padding: 15px;
+  border-radius: var(--border-radius2);
+  background: var(--medium-blue);
+  transform: translate(-130px, 25px);
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+  transform: translate(-55px, 25px);
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  width: 34ch;
+  color: var(--light-grey);
+  transform: translate(-7px, 10px);
+}
+
+/* styling the rating buttons */
+main .container ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul .rating-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  padding: 22px;
+  background: var(--medium-blue);
+  color: white;
+  border-radius: var(--border-radius2);
+  cursor: pointer;
+  border: none;
+  transform: translate(0, 30px);
+}
+
+/* the button style and the footer */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 280px;
+  padding: 18px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: var(--border-radius3);
+  background-color: var(--orange);
+}
+
+.submit {
+  transform: translate(0, 50px);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--medium-grey);
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+/* hover effect for the rating container */
+@media (hover: hover) {
+  .submit:hover {
+    background-color: white;
+    color: var(--orange);
+  }
+
+  footer a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .rating-style:hover {
+    color: white;
+    background-color: var(--orange);
+  }
+  .rating-style:focus {
+    color: white;
+    background-color: var(--light-grey);
+  }
+}
+@media (hover: none) {
+}
+/* end of rating container */
+
+/*  thank you container */
+main .thank-you-state {
+  display: none;
+}
+.thank-you-state h1 {
+  font-size: 27px;
+  font-weight: 500;
+  transform: translate(0, 30px);
+}
+.thank-you-state .massage {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  width: 35ch;
+  transform: translate(0, 5px);
+}
+.thank-you-state .state-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--medium-blue);
+  border-radius: var(--border-radius3);
+  transform: translate(0, 20px);
+}
+.thank-you-state .state-result p {
+  width: 10ch;
+  color: var(--orange);
+  opacity: 0.7;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  transform: translate(15px, 0);
+}
+img {
+  width: 150px;
+  margin: 0;
+  padding: 0;
 }

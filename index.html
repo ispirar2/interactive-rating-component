@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+      content="width=device-width, initial-scale=1.0" />
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+      href="./images/favicon-32x32.png" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="/src/style.css"
-    />
+      href="/src/style.css" />
     <title>
       Frontend Mentor | Interactive
       rating component
@@ -27,8 +33,12 @@
     <main>
       <!-- Rating state start -->
       <div
-        class="container rating-states"
-      >
+        class="container rating-states">
+        <div class="logo-style">
+          <img
+            src="/images/icon-star.svg"
+            alt="" />
+        </div>
         <h1>How did we do?</h1>
         <p>
           Please let us know how we did
@@ -37,27 +47,43 @@
           help us improve our offering!
         </p>
         <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+          <button class="rating-style">
+            <li>1</li>
+          </button>
+          <button class="rating-style">
+            <li>2</li>
+          </button>
+          <button class="rating-style">
+            <li>3</li>
+          </button>
+          <button class="rating-style">
+            <li>4</li>
+          </button>
+          <button class="rating-style">
+            <li>5</li>
+          </button>
         </ul>
-        <button>Submit</button>
+        <button class="submit">
+          Submit
+        </button>
       </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
+
       <div
-        class="container thank-you-state"
-      >
+        class="container thank-you-state">
+        <img
+          src="/images/illustration-thank-you.svg"
+          alt="" />
         <div class="state-result">
-          <p>You selected</p>
-          <!-- Add rating here -->
+          <p class="selected-rating">
+            You selected
+          </p>
           <p>out of 5</p>
         </div>
         <h1>Thank you!</h1>
-        <p>
+        <p class="massage">
           We appreciate you taking the
           time to give a rating. If you
           ever need more support, don’t
@@ -75,12 +101,15 @@
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a href="#">Your Name Here</a>.
+        <a
+          href="https://www.frontendmentor.io/profile/ispirar2"
+          target="_blank"
+          >Molhem Marawi</a
+        >.
       </div>
     </footer>
     <script
       type="text/javascript"
-      src="/src/index.js"
-    ></script>
+      src="/src/index.js"></script>
   </body>
 </html>
